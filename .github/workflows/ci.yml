@@ -1,0 +1,14 @@
+name: CI - Tests Python
+
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Afficher un message
+        run: echo "Hello from GitHub Actions"
