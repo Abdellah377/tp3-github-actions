@@ -22,3 +22,9 @@ jobs:
 
       - name: Exécuter les tests et la couverture
         run: python -m pytest -v --cov=app --cov-report=term-missing
+      
+      - name: Vérifier les installations
+        run: |
+          python --version
+          python -m pytest --version
+          python -m pip show pytest-cov
